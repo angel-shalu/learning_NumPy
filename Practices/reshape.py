@@ -27,3 +27,21 @@ numpy_arange= np.arange(1, 37).reshape(6,6)
 print(numpy_arange)
 print(numpy_arange.size)  # Print the size of the element
 
+
+
+
+"""
+If the array size is very large then only corners of the array are printed.
+Then the central part of the array is skipped.
+"""
+numpy_exercises= np.arange(10000).reshape(200,50)
+print(numpy_exercises)
+
+# set_printoption()  ----np.set_printoption(threshold=sys.maxsize)
+"""
+To enable numpy to print the entire array, use'set_printoptions()'method.
+"""
+import sys
+numpy_exercises=np.arange(10000).reshape(200,50)
+np.set_printoptions(threshold=sys.maxsize)
+print(numpy_exercises)
