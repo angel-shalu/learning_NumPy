@@ -1,0 +1,1 @@
+print(a3.astype(np.int32))
